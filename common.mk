@@ -24,18 +24,18 @@ $(call inherit-product, vendor/samsung/universal8825-common/universal8825-common
 
 # Audio
 PRODUCT_PACKAGES += \
-	android.hardware.audio.service \
-	android.hardware.audio@6.0-impl \
-	android.hardware.audio.effect@6.0-impl \
-	android.hardware.soundtrigger@2.3-impl \
-	audio.r_submix.default.so \
-	audio.usb.default.so \
-	libtinycompress
+    android.hardware.audio.service \
+    android.hardware.audio@6.0-impl \
+    android.hardware.audio.effect@6.0-impl \
+    android.hardware.soundtrigger@2.3-impl \
+    audio.r_submix.default.so \
+    audio.usb.default.so \
+    libtinycompress
 
 PRODUCT_COPY_FILES += \
-	$(COMMON_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
-	$(COMMON_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
-   	frameworks/av/services/audiopolicy/config/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
+    $(COMMON_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
+    $(COMMON_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
+    frameworks/av/services/audiopolicy/config/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
     frameworks/av/services/audiopolicy/config/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
     frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml
@@ -43,30 +43,30 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-	audio.bluetooth.default \
-	android.hardware.bluetooth@1.0-impl \
-	android.hardware.bluetooth@1.0-service 
+    audio.bluetooth.default \
+    android.hardware.bluetooth@1.0-impl \
+    android.hardware.bluetooth@1.0-service 
 	
 # Camera
 PRODUCT_PACKAGES += \
-	android.hardware.camera.device@3.6 \
-	android.hardware.camera.provider@2.6 
+    android.hardware.camera.device@3.6 \
+    android.hardware.camera.provider@2.6 
 
 
 # Display
 PRODUCT_PACKAGES += \
-	android.hardware.graphics.allocator@4.0-impl \
-	android.hardware.graphics.allocator@4.0-service \
-	android.hardware.graphics.composer@2.4-service.rc \
-	android.hardware.graphics.mapper@4.0-impl \
-	gralloc.default
+    android.hardware.graphics.allocator@4.0-impl \
+    android.hardware.graphics.allocator@4.0-service \
+    android.hardware.graphics.composer@2.4-service.rc \
+    android.hardware.graphics.mapper@4.0-impl \
+    gralloc.default
 
 # DRM
 PRODUCT_PACKAGES += \
-	android.hardware.drm@1.4-service.clearkey \
-	android.hardware.drm@1.4 \
-	libdrmclearkeyplugin \
-	libdrm 
+    android.hardware.drm@1.4-service.clearkey \
+    android.hardware.drm@1.4 \
+    libdrmclearkeyplugin \
+    libdrm 
 
 # Fastbootd
 PRODUCT_PACKAGES += \
@@ -78,8 +78,8 @@ PRODUCT_PACKAGES += \
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
-	android.hardware.gatekeeper@1.0-service \
-	android.hardware.gatekeeper@1.0-impl
+    android.hardware.gatekeeper@1.0-service \
+    android.hardware.gatekeeper@1.0-impl
 
 # GPS
 PRODUCT_PACKAGES += \
@@ -87,14 +87,14 @@ PRODUCT_PACKAGES += \
 
 # Health
 PRODUCT_PACKAGES += \
-	android.hardware.health@2.1
+    android.hardware.health@2.1
 
 # HIDL
 PRODUCT_PACKAGES += \
-   libhidltransport \
-   libhidltransport.vendor \
-   libhwbinder \
-   libhwbinder.vendor
+    libhidltransport \
+    libhidltransport.vendor \
+    libhwbinder \
+    libhwbinder.vendor
 
 # Init and Fstab Files
 PRODUCT_PACKAGES += \
@@ -131,11 +131,11 @@ PRODUCT_COPY_FILES += \
 
 # NFC
 PRODUCT_PACKAGES += \
-	android.hardware.nfc@1.2-service.samsung
+    android.hardware.nfc@1.2-service.samsung
 
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-nci.conf \
-	$(COMMON_PATH)/configs/nfc/libnfc-sec-vendor.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-sec-vendor.conf
+    $(COMMON_PATH)/configs/nfc/libnfc-sec-vendor.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-sec-vendor.conf
 
 # Permissions
 PRODUCT_COPY_FILES += \
