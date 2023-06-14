@@ -208,7 +208,7 @@ PRODUCT_PACKAGES += \
 
 # Touch
 PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.samsung 
+    vendor.lineage.touch@1.0-service.exynos1280 
 
 # USB
 PRODUCT_PACKAGES += \
