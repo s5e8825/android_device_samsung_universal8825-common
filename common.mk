@@ -19,9 +19,6 @@ COMMON_PATH := device/samsung/universal8825-common
 DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay
 DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay-lineage
 
-# Inherit Proprietary Vendor Blobs
-$(call inherit-product, vendor/samsung/universal8825-common/universal8825-common-vendor.mk)
-
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio.service \
