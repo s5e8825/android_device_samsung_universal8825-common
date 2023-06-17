@@ -65,7 +65,6 @@ TARGET_INIT_VENDOR_LIB := //$(COMMON_PATH):init_universal8825
 ## Kernel
 BOARD_KERNEL_CMDLINE := androidboot.selinux=permissive bootconfig buildtime_bootconfig=enable loop.max_part=7
 BOARD_BOOT_HEADER_VERSION := 2
-BOARD_CUSTOM_BOOTIMG := TRUE
 
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_PAGESIZE := 4096
