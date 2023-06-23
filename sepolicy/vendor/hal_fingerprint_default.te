@@ -1,32 +1,16 @@
-allow hal_fingerprint_default {
-    fp_sensor_device
-    tee_device
-}:chr_file rw_file_perms;
+# hal_fingerprint_default.te
 
-allow hal_fingerprint_default fingerprint_vendor_data_file:dir { rw_dir_perms create rmdir };
+add_hwservice(hal_fingerprint_default, hal_vendor_fingerprint_hwservice)
 
-allow hal_fingerprint_default fingerprint_vendor_data_file:file { read write open getattr rename create unlink };
+# /dev/esfp[0-9]
+allow hal_fingerprint_default fp_sensor_device:chr_file rw_file_perms;
 
-# /efs/biometrics
-allow hal_fingerprint_default biometrics_efs_file:file r_file_perms;
-allow hal_fingerprint_default biometrics_efs_file:dir search;
-allow hal_fingerprint_default efs_file:dir search;
+# /data/vendor/ -> biometrics
+file_type_auto_trans(hal_fingerprint_default, vendor_data_file, biometrics_vendor_data_file)
 
-# /sys/class/lcd/panel/mask_brightness
-allow hal_fingerprint_default sysfs_lcd_writable:dir search;
-allow hal_fingerprint_default sysfs_lcd_writable:file rw_file_perms;
+# /data/vendor/biometrics/*
+allow hal_fingerprint_default biometrics_vendor_data_file:file create_file_perms;
 
 # /sys/class/fingerprint/
 allow hal_fingerprint_default sysfs_fingerprint:dir r_dir_perms;
 allow hal_fingerprint_default sysfs_fingerprint:file r_file_perms;
-
-# /data/vendor/biometrics/*
-allow hal_fingerprint_default biometrics_vendor_data_file:file create_file_perms;
-allow hal_fingerprint_default biometrics_vendor_data_file:dir { read write open add_name create rmdir remove_name search };
-
-# /sys/class/sec/tsp/
-allow hal_fingerprint_default sysfs_sec_touchscreen:dir search;
-allow hal_fingerprint_default sysfs_touchscreen_writable:file { write open getattr };
-
-# vendor.finger.down
-set_prop(hal_fingerprint_default, vendor_fingerprint_prop)

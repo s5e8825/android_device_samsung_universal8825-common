@@ -8,7 +8,7 @@ init_daemon_domain(macloader)
 
 set_prop(macloader, vendor_wifi_prop);
 
-allow macloader self:capability { net_admin sys_module };
+allow macloader self:capability { net_admin };
 
 allow macloader self:udp_socket create_socket_perms;
 allowxperm macloader self:udp_socket ioctl { 0x8913 0x8914 };
@@ -31,17 +31,10 @@ allow macloader wifi_efs_file:file rw_file_perms;
 allow macloader sysfs_net:dir r_dir_perms;
 allow macloader sysfs_net:file r_file_perms;
 
+# /sys/module/dhd/parameters/firmware_path
 allow macloader sysfs_wifi_writable:dir r_dir_perms;
 allow macloader sysfs_wifi_writable:file rw_file_perms;
 
 # /sys/wifi
 allow macloader sysfs_wifi:dir r_dir_perms;
 allow macloader sysfs_wifi:file r_file_perms;
-
-# /sys/kernel/boot_wlan
-allow macloader sysfs_wifi_writable:file { write open };
-
-set_prop(macloader, vendor_wifi_prop)
-
-# Don't set ro.vendor.wifi.sap.interface
-dontaudit macloader vendor_default_prop:property_service set;
