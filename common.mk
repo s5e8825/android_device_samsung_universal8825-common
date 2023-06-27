@@ -93,16 +93,7 @@ PRODUCT_PACKAGES += \
     libhwbinder \
     libhwbinder.vendor
 
-# Init and Fstab Files
-PRODUCT_PACKAGES += \
-    fstab.ramplus \
-    init.fingerprint.rc \
-    init.ramplus.rc \
-    init.sensorhub.rc \
-    init.vendor.onebinary.rc \
-    init.vendor.rilcommon.rc \
-    init.vendor.sysfw.rc
-    
+# Init And Fstab Files
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/init/fstab.s5e8825:$(TARGET_COPY_OUT_RAMDISK)/fstab.s5e8825 \
     $(COMMON_PATH)/configs/init/fstab.s5e8825:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.s5e8825 \
