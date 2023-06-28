@@ -52,6 +52,11 @@ TARGET_NO_BOOTLOADER := true
 
 TARGET_BOARD_INFO_FILE := $(COMMON_PATH)/board-info.txt
 
+# Kernel
+BOARD_USES_GENERIC_KERNEL_IMAGE := true
+BOARD_RAMDISK_USE_LZ4 := true
+
+
 # DTB
 BOARD_DTB_CFG := $(COMMON_PATH)/configs/kernel/$(TARGET_SOC).cfg
 
