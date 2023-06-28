@@ -52,6 +52,9 @@ TARGET_NO_BOOTLOADER := true
 
 TARGET_BOARD_INFO_FILE := $(COMMON_PATH)/board-info.txt
 
+# DTB
+BOARD_DTB_CFG := $(COMMON_PATH)/configs/kernel/$(TARGET_SOC).cfg
+
 # Fingerprint
 TARGET_SEC_FP_REQUEST_FORCE_CALIBRATE := true
 
