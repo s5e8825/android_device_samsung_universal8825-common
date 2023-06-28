@@ -16,8 +16,14 @@
 
 COMMON_PATH := device/samsung/universal8825-common
 
+# Overlays
 DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay
 DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay-lineage
+ifeq ($(TARGET_HAS_FOD),true)
+DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay-fod
+else
+DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay-nofod
+endif
 
 # Audio
 PRODUCT_PACKAGES += \
