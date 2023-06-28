@@ -25,6 +25,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
     android.hardware.audio.effect@6.0-impl \
     android.hardware.soundtrigger@2.3-impl \
+    android.hidl.allocator@1.0.vendor \
     audio.r_submix.default.so \
     audio.usb.default.so \
     libtinycompress
@@ -77,6 +78,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-service \
     android.hardware.gatekeeper@1.0-impl
+
+# GNSS
+PRODUCT_PACKAGES += \
+    android.hardware.gnss@2.1.vendor
 
 # GPS
 PRODUCT_PACKAGES += \
@@ -180,6 +185,7 @@ PRODUCT_PACKAGES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
+    android.hardware.contexthub@1.0.vendor \
     android.hardware.sensors@2.0-service-multihal
 
 # Soong namespaces
