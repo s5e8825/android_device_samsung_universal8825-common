@@ -72,7 +72,8 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service-samsung.universal8825
+    android.hardware.biometrics.fingerprint@2.3-service-samsung.universal8825 \
+    SamsungUdfpsHandler.universal8825
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
