@@ -71,9 +71,14 @@ PRODUCT_PACKAGES += \
     fastbootd 
 
 # Fingerprint
+ifeq ($(TARGET_HAVE_FOD),true)
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service-samsung.universal8825 \
     SamsungUdfpsHandler.universal8825
+else
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.3-service.samsung
+endif
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
