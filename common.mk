@@ -186,7 +186,7 @@ PRODUCT_PACKAGES += \
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.contexthub@1.0.vendor \
-    android.hardware.sensors@2.0-service-multihal
+    android.hardware.sensors-service.samsung-multihal
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
