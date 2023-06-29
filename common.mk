@@ -197,13 +197,8 @@ PRODUCT_PACKAGES += \
     mx_log_collection.sh \
     install-recovery.sh \
 
-PRODUCT_PACKAGES += \
-    fstab.s5e8825 \
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.s5e8825:$(TARGET_COPY_OUT_RAMDISK)/fstab.s5e8825 \
-    $(LOCAL_PATH)/rootdir/etc/fstab.s5e8825:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/fstab.s5e8825 \
-    $(LOCAL_PATH)/rootdir/etc/fstab.s5e8825:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.s5e8825 \
     $(LOCAL_PATH)/configs/init/init.recovery.s5e8825.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.s5e8825.rc \
     $(LOCAL_PATH)/configs/init/init.recovery.samsung.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.samsung.rc \
     $(LOCAL_PATH)/configs/init/init.debug.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.debug.rc \
