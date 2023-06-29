@@ -265,8 +265,10 @@ vendor/lib64/hw/android.hardware.health@2.0-impl-2.1-samsung.so
 vendor/lib64/vendor.samsung.hardware.health@2.0.so
 
 # HIDL
+vendor/lib/android.hidl.allocator@1.0.so
 vendor/lib/libhwbinder.so
 vendor/lib/libhidltransport.so
+-vendor/lib64/android.hidl.allocator@1.0.so
 -vendor/lib64/libhwbinder.so
 -vendor/lib64/libhidltransport.so
 
@@ -340,6 +342,12 @@ vendor/lib64/libsensorndkbridge.so
 vendor/lib64/sensors.grip.so
 vendor/lib64/sensors.inputvirtual.so
 vendor/lib64/sensors.sensorhub.so
+
+# Thermal
+vendor/lib/android.hardware.thermal@1.0.so
+-vendor/lib/android.hardware.thermal@2.0.so
+vendor/lib64/android.hardware.thermal@1.0.so
+-vendor/lib64/android.hardware.thermal@2.0.so
 
 # Vibrator
 vendor/lib/hw/vibrator.default.so
