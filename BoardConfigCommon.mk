@@ -71,9 +71,6 @@ TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS := 0x2000U | 0x400000000LL
 # libinit
 TARGET_INIT_VENDOR_LIB := //$(COMMON_PATH):init_universal8825
 
-## Keymaster
-TARGET_KEYMASTER_VARIANT := samsung
-
 ## Manifest
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
