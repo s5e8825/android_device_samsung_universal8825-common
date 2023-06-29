@@ -199,6 +199,28 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.deprecated@1.0.vendor \
     secril_config_svc
 
+# Rootdir
+PRODUCT_PACKAGES += \
+    scsc_get_platform_info.sh \
+    mx_logger_dump.sh \
+    init.insmod.sh \
+    gps.sh \
+    enable_test_mode.sh \
+    mx_log_collection.sh \
+    install-recovery.sh \
+
+PRODUCT_PACKAGES += \
+    fstab.s5e8825 \
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/fstab.s5e8825:$(TARGET_COPY_OUT_RAMDISK)/fstab.s5e8825 \
+    $(LOCAL_PATH)/rootdir/etc/fstab.s5e8825:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/fstab.s5e8825 \
+    $(LOCAL_PATH)/rootdir/etc/fstab.s5e8825:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.s5e8825 \
+    $(LOCAL_PATH)/configs/init/init.recovery.s5e8825.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.s5e8825.rc \
+    $(LOCAL_PATH)/configs/init/init.recovery.samsung.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.samsung.rc \
+    $(LOCAL_PATH)/configs/init/init.debug.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.debug.rc \
+    $(LOCAL_PATH)/configs/init/vendor.fstab.s5e8825:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.s5e8825
+
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.contexthub@1.0.vendor \
