@@ -1,4 +1,4 @@
-# All blobs from a53xnaxx-user 13 TP1A.220624.014 A536BXXU4BVJG release-keys, unless pinned
+# Proprietary Files From A536BXXU4BVJG
 
 # Audio
 vendor/firmware/tfa98xx.cnt
@@ -99,54 +99,6 @@ vendor/lib64/vendor.samsung.hardware.bluetooth.audio@2.0.so
 vendor/lib64/vendor.samsung.hardware.bluetooth.audio@2.1.so
 vendor/lib64/vendor.samsung.hardware.bluetooth@2.0.so
 
-# Bluetooth-AptX
-lib/libaptX_encoder.so
-lib64/libaptX_encoder.so
-
-# Camera
-vendor/bin/hw/vendor.samsung.hardware.camera.provider@4.0-service_64
-vendor/etc/init/vendor.samsung.hardware.camera.provider@4.0-service_64.rc
-vendor/lib/hw/camera.s5e8825.so
-vendor/lib/hw/camera.unihal.default.so
-vendor/lib/libcamera2ndk_vendor.so
-vendor/lib/libDualCamBokehCapture.camera.samsung.so
-vendor/lib/libdualcam_refocus_image.so
-vendor/lib/libgui_vendor.so
-vendor/lib/libmpbase.so
-vendor/lib/libvdis_core.so
-vendor/lib/libvdis_interface.so
-vendor/lib64/android.hardware.camera.common@1.0.so
-vendor/lib64/android.hardware.camera.device@1.0.so
-vendor/lib64/android.hardware.camera.device@3.2.so
-vendor/lib64/android.hardware.camera.device@3.3.so
-vendor/lib64/android.hardware.camera.device@3.4.so
-vendor/lib64/android.hardware.camera.device@3.5.so
-vendor/lib64/android.hardware.camera.device@3.6.so
-vendor/lib64/android.hardware.camera.provider@2.4.so
-vendor/lib64/android.hardware.camera.provider@2.5.so
-vendor/lib64/android.hardware.camera.provider@2.6.so
-vendor/lib64/hw/camera.s5e8825.so
-vendor/lib64/hw/camera.unihal.default.so
-vendor/lib64/libc++_shared.so
-vendor/lib64/libcamera2ndk_vendor.so
-vendor/lib64/libDualCamBokehCapture.camera.samsung.so
-vendor/lib64/libdualcam_refocus_image.so
-vendor/lib64/libdualcam_refocus_video.so
-vendor/lib64/libgui_vendor.so
-vendor/lib64/libmpbase.so
-vendor/lib64/libvdis_core.so
-vendor/lib64/libvdis_interface.so
-vendor/lib64/vendor.samsung.hardware.camera.device@5.0-impl.so
-vendor/lib64/vendor.samsung.hardware.camera.device@5.0.so
-vendor/lib64/vendor.samsung.hardware.camera.provider@4.0-legacy.so
-vendor/lib64/vendor.samsung.hardware.camera.provider@4.0.so
-
-# Camera-arcsoft
-vendor/lib/libarcsoft_super_night_auto_raw.so
-vendor/lib/libarcsoft_super_night_raw.so
-vendor/lib64/libarcsoft_super_night_auto_raw.so
-vendor/lib64/libarcsoft_super_night_raw.so
-
 # DRM
 vendor/lib64/liboemcrypto.so
 
@@ -169,7 +121,7 @@ vendor/lib64/libwvhidl.so
 vendor/lib64/mediadrm/libdrmclearkeyplugin.so
 vendor/lib64/mediadrm/libwvdrmengine.so
 
-# Display-Hardware
+## Display
 vendor/bin/hw/android.hardware.graphics.allocator@4.0-service
 vendor/bin/hw/android.hardware.graphics.composer@2.4-service
 vendor/bin/hw/android.hardware.memtrack-service.exynos
@@ -180,6 +132,12 @@ vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl.so
 vendor/lib/hw/gralloc.default.so
 vendor/lib/hw/hwcomposer.s5e8825.so
 vendor/lib/libdrm.so
+vendor/lib/libacryl.so
+vendor/lib/libdrmresource.so
+vendor/lib/libexynos.so
+vendor/lib/libexynosgraphicbuffer.so
+vendor/lib/libExynosHWCService.so
+vendor/lib/libion_exynos.so
 vendor/lib64/android.hardware.graphics.composer@2.1-resources.so
 vendor/lib64/android.hardware.graphics.composer@2.1.so
 vendor/lib64/android.hardware.graphics.composer@2.2-resources.so
@@ -191,42 +149,11 @@ vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl.so
 vendor/lib64/hw/gralloc.default.so
 vendor/lib64/hw/hwcomposer.s5e8825.so
 vendor/lib64/libdrm.so
-
-# Dolby
-vendor/etc/dax3_media_codecs_dolby_audio.xml
-vendor/etc/dolby/dax-default.xml
-vendor/etc/media_codecs_dolby_audio.xml
-vendor/firmware/dolby.bin
-
-# Fido
-vendor/lib/libfidoauthnr_v2.so
-vendor/lib64/libfidoauthnr_v2.so
-
-# Fingerprint
-vendor/apex/com.samsung.android.biometrics.face.signed.apex
-vendor/apex/com.samsung.android.biometrics.fingerprint.signed.apex
-vendor/bin/hw/vendor.samsung.hardware.biometrics.face-service
-vendor/bin/hw/vendor.samsung.hardware.biometrics.fingerprint@3.0-service
-vendor/etc/init/fingerprint_common.rc
-vendor/etc/init/init.fingerprint.rc
-vendor/etc/init/vendor.samsung.hardware.biometrics.fingerprint@3.0-service.rc
--vendor/etc/vintf/manifest/vendor.samsung.hardware.biometrics.fingerprint@3.0-service.xml
-vendor/lib/android.hardware.biometrics.common-V1-ndk_platform.so
-vendor/lib/android.hardware.biometrics.face-V1-ndk_platform.so
-vendor/lib/hw/fingerprint.default.so
-vendor/lib/libegis_fp_normal_sensor_test.so
-vendor/lib/libgf_in_system_lib.so
-vendor/lib/libqfp_sensortest.so
-vendor/lib/vendor.samsung.hardware.biometrics.face-V2-ndk_platform.so
-vendor/lib64/android.hardware.biometrics.common-V1-ndk_platform.so
-vendor/lib64/android.hardware.biometrics.face-V1-ndk_platform.so
-vendor/lib64/android.hardware.biometrics.fingerprint@2.1.so
-vendor/lib64/hw/fingerprint.default.so
-vendor/lib64/libegis_fp_normal_sensor_test.so
-vendor/lib64/libgf_in_system_lib.so
-vendor/lib64/libqfp_sensortest.so
-vendor/lib64/vendor.samsung.hardware.biometrics.face-V2-ndk_platform.so
-vendor/lib64/vendor.samsung.hardware.biometrics.fingerprint@3.0.so
+vendor/lib64/libexynosdisplay.so
+vendor/lib64/libacryl.so
+vendor/lib64/libexynosgraphicbuffer.so
+vendor/lib64/libExynosHWCService.so
+vendor/lib64/libion_exynos.so
 
 # Firmware
 recovery/ramdisk/vendor/firmware/gt9895_a53x.bin
@@ -287,9 +214,12 @@ vendor/firmware/txse2.bin
 vendor/firmware/volumemonitor.bin
 vendor/firmware/vts.bin
 
-# GPS
+## GPS
+vendor/bin/hw/gpsd
 vendor/bin/hw/vendor.samsung.hardware.gnss@2.1-service
+vendor/etc/init/init.gps.rc
 vendor/etc/init/vendor.samsung.hardware.gnss@2.1-service.rc
+vendor/lib/libwrappergps.so
 vendor/lib64/android.hardware.gnss.measurement_corrections@1.0.so
 vendor/lib64/android.hardware.gnss.measurement_corrections@1.1.so
 vendor/lib64/android.hardware.gnss.visibility_control@1.0.so
@@ -297,6 +227,7 @@ vendor/lib64/android.hardware.gnss@1.0.so
 vendor/lib64/android.hardware.gnss@1.1.so
 vendor/lib64/android.hardware.gnss@2.0.so
 vendor/lib64/android.hardware.gnss@2.1.so
+vendor/lib64/libwrappergps.so
 vendor/lib64/hw/android.hardware.gnss@2.1-impl.so
 vendor/lib64/hw/vendor.samsung.hardware.gnss@2.1-impl.so
 vendor/lib64/vendor.samsung.hardware.gnss@2.0.so
@@ -333,14 +264,6 @@ vendor/lib64/android.hardware.health@2.1.so
 vendor/lib64/hw/android.hardware.health@2.0-impl-2.1-samsung.so
 vendor/lib64/vendor.samsung.hardware.health@2.0.so
 
-# HotwordEnrollment
--product/priv-app/HotwordEnrollmentOKGoogleEx4CORTEXM4/HotwordEnrollmentOKGoogleEx4CORTEXM4.apk
--product/priv-app/HotwordEnrollmentOKGoogleEx4CORTEXM4/HotwordEnrollmentOKGoogleEx4CORTEXM4.apk.prof
--product/priv-app/HotwordEnrollmentXGoogleEx4CORTEXM4/HotwordEnrollmentXGoogleEx4CORTEXM4.apk
--product/priv-app/HotwordEnrollmentXGoogleEx4CORTEXM4/HotwordEnrollmentXGoogleEx4CORTEXM4.apk.prof
-system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
--system_ext/framework/com.android.hotwordenrollment.common.util.jar
-
 # Keymaster
 vendor/etc/permissions/android.hardware.hardware_keystore.xml
 vendor/etc/permissions/android.hardware.keystore.app_attest_key.xml
@@ -357,63 +280,17 @@ vendor/lib64/libkeystore-wifi-hidl.so
 vendor/lib64/libpuresoftkeymasterdevice.so
 vendor/lib64/lib_android_keymaster_keymint_utils.so
 
-# Lights
-vendor/bin/hw/vendor.samsung.hardware.light-service
-vendor/lib64/vendor.samsung.hardware.light-V1-ndk_platform.so
-
-# Listen
-vendor/lib/android.hardware.soundtrigger@2.1.so
-vendor/lib/android.hardware.soundtrigger@2.2.so
-vendor/lib/android.hardware.soundtrigger@2.3.so
-vendor/lib/hw/android.hardware.soundtrigger@2.0-impl.so
-vendor/lib/hw/android.hardware.soundtrigger@2.3-impl.so
-vendor/lib/hw/sound_trigger.primary.s5e8825.so
-vendor/lib64/android.hardware.soundtrigger@2.1.so
-vendor/lib64/android.hardware.soundtrigger@2.2.so
-vendor/lib64/android.hardware.soundtrigger@2.3.so
-vendor/lib64/hw/android.hardware.soundtrigger@2.3-impl.so
-vendor/lib64/hw/sound_trigger.primary.s5e8825.so
-
-# Media
-vendor/lib/libstagefright_soft_mpeg2dec.so
-
-# NFC
-vendor/bin/hw/android.hardware.secure_element@1.2-service
-vendor/bin/hw/sec.android.hardware.nfc@1.2-service
-vendor/etc/init/android.hardware.secure_element@1.2-service.rc
-vendor/etc/init/init.nfc.samsung.rc
-vendor/etc/init/sec.android.hardware.nfc@1.2-service.rc
-vendor/etc/libnfc-sec-vendor.conf
-vendor/etc/nfc/sec_s3nrn4v_hwreg.bin
-vendor/etc/nfc/sec_s3nrn4v_swreg.bin
-vendor/etc/permissions/com.nxp.mifare.xml
--vendor/etc/vintf/manifest/sec.android.hardware.nfc@1.2-service.xml
-vendor/lib64/android.hardware.nfc@1.0.so
-vendor/lib64/android.hardware.nfc@1.1.so
-vendor/lib64/android.hardware.nfc@1.2.so
-vendor/lib64/android.hardware.secure_element-impl-gto.so
-vendor/lib64/android.hardware.secure_element@1.0.so
-vendor/lib64/android.hardware.secure_element@1.1.so
-vendor/lib64/android.hardware.secure_element@1.2.so
-vendor/lib64/nfc_nci_sec.so
-vendor/lib64/vendor.samsung.hardware.nfc@2.0.so
-
-# Neural-networks
-vendor/bin/hw/android.hardware.neuralnetworks@1.3-service.eden-drv
-vendor/etc/init/android.hardware.neuralnetworks@1.3-service.eden-drv.rc
-vendor/lib64/android.hardware.neuralnetworks@1.0.so
-vendor/lib64/android.hardware.neuralnetworks@1.1.so
-vendor/lib64/android.hardware.neuralnetworks@1.2.so
-vendor/lib64/android.hardware.neuralnetworks@1.3.so
-
 # Power-Hardware
 vendor/bin/hw/android.hardware.power-service.s5e8825
 vendor/bin/hw/android.hardware.power.samsung-service
+vendor/etc/init/power-default-sec.rc
+vendor/etc/init/power-exynos.rc
 vendor/lib/hw/power.default.so
 vendor/lib64/android.hardware.power-V1-ndk_platform.so
 vendor/lib64/hw/power.default.so
 
 # Radio
+vendor/bin/hw/rild
 vendor/lib64/android.hardware.radio.config@1.0.so
 vendor/lib64/android.hardware.radio.config@1.1.so
 vendor/lib64/android.hardware.radio.config@1.2.so
@@ -437,6 +314,8 @@ vendor/lib64/vendor.samsung.hardware.radio@2.2.so
 vendor/bin/hw/android.hardware.sensors@2.0-service.multihal
 vendor/etc/init/android.hardware.sensors@2.0-service-multihal.rc
 -vendor/etc/vintf/manifest/android.hardware.sensors@2.0-multihal.xml
+vendor/etc/init/init.sensorhub.rc
+vendor/etc/sensors/hals.conf
 vendor/lib/android.hardware.sensors@1.0.so
 vendor/lib/android.hardware.sensors@2.0-ScopedWakelock.so
 vendor/lib/android.hardware.sensors@2.0.so
@@ -456,14 +335,6 @@ vendor/lib64/sensors.grip.so
 vendor/lib64/sensors.inputvirtual.so
 vendor/lib64/sensors.sensorhub.so
 
-# Thermal
-vendor/lib/android.hardware.thermal@1.0.so
-vendor/lib/android.hardware.thermal@2.0.so
-vendor/lib64/android.hardware.thermal@1.0.so
-vendor/lib64/android.hardware.thermal@2.0.so
-
-# Time
-
 # Vibrator
 vendor/lib/hw/vibrator.default.so
 vendor/lib/libvibrator.so
@@ -472,8 +343,12 @@ vendor/lib64/libvibrator.so
 
 # WiFi
 vendor/bin/hw/android.hardware.wifi@1.0-service
+vendor/etc/wlan_common_rc
+vendor/etc/wlan_vendor_rc
 vendor/etc/init/android.hardware.wifi.supplicant-service.rc
 vendor/etc/init/android.hardware.wifi@1.0-service.rc
+vendor/etc/init/wifi.rc
+vendor/etc/init/wifi_slsi.rc
 -vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml
 -vendor/etc/vintf/manifest/android.hardware.wifi.supplicant.xml
 -vendor/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml
@@ -492,4 +367,3 @@ vendor/lib64/android.hardware.wifi@1.2.so
 vendor/lib64/android.hardware.wifi@1.3.so
 vendor/lib64/android.hardware.wifi@1.4.so
 vendor/lib64/android.hardware.wifi@1.5.so
-
