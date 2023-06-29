@@ -105,10 +105,8 @@ PRODUCT_PACKAGES += \
 
 # HIDL
 PRODUCT_PACKAGES += \
-    libhidltransport \
-    libhidltransport.vendor \
-    libhwbinder \
-    libhwbinder.vendor
+    libhidltransport:64 \
+    libhwbinder:64
 
 # Init And Fstab Files
 PRODUCT_COPY_FILES += \
@@ -123,7 +121,7 @@ PRODUCT_COPY_FILES += \
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.0-service.samsung \
-    libkeymaster4_1support.vendor
+    libkeymaster4_1support:64
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -136,7 +134,7 @@ PRODUCT_COPY_FILES += \
 
 # NFC
 PRODUCT_PACKAGES += \
-    android.hardware.nfc@1.2-service.samsung
+    sec.android.hardware.nfc@1.2-service
 
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-nci.conf \

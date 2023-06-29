@@ -44,9 +44,9 @@ vendor/lib/hw/android.hardware.audio@2.0-impl.so
 vendor/lib/hw/android.hardware.audio@6.0-impl.so
 vendor/lib/hw/audio.primary.default.so
 vendor/lib/hw/audio.primary.s5e8825.so
-vendor/lib/hw/audio.r_submix.default.so
+-vendor/lib/hw/audio.r_submix.default.so
 vendor/lib/hw/audio.sec_primary.default.so
-vendor/lib/hw/audio.usb.default.so
+-vendor/lib/hw/audio.usb.default.so
 vendor/lib/hw/vendor.samsung.hardware.audio@1.0-impl.so
 vendor/lib/vendor.samsung.hardware.audio@1.0.so
 vendor/lib64/android.hardware.audio.common-util.so
@@ -67,9 +67,9 @@ vendor/lib64/hw/android.hardware.audio.effect@6.0-impl.so
 vendor/lib64/hw/android.hardware.audio@2.0-impl.so
 vendor/lib64/hw/android.hardware.audio@6.0-impl.so
 vendor/lib64/hw/audio.primary.default.so
-vendor/lib64/hw/audio.r_submix.default.so
+-vendor/lib64/hw/audio.r_submix.default.so
 vendor/lib64/hw/audio.sec_primary.default.so
-vendor/lib64/hw/audio.usb.default.so
+-vendor/lib64/hw/audio.usb.default.so
 vendor/lib64/hw/vendor.samsung.hardware.audio@1.0-impl.so
 vendor/lib64/vendor.samsung.hardware.audio@1.0.so
 vendor/lib64/vendor.samsung_slsi.hardware.audio_dump@1.0.so
@@ -125,10 +125,10 @@ vendor/lib64/mediadrm/libwvdrmengine.so
 vendor/bin/hw/android.hardware.graphics.allocator@4.0-service
 vendor/bin/hw/android.hardware.graphics.composer@2.4-service
 vendor/bin/hw/android.hardware.memtrack-service.exynos
-vendor/etc/init/android.hardware.graphics.allocator@4.0-service.rc
-vendor/etc/init/android.hardware.graphics.composer@2.4-service.rc
-vendor/lib/hw/android.hardware.graphics.allocator@4.0-impl.so
-vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl.so
+-vendor/etc/init/android.hardware.graphics.allocator@4.0-service.rc
+-vendor/etc/init/android.hardware.graphics.composer@2.4-service.rc
+-vendor/lib/hw/android.hardware.graphics.allocator@4.0-impl.so
+-vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl.so
 vendor/lib/hw/gralloc.default.so
 vendor/lib/hw/hwcomposer.s5e8825.so
 vendor/lib/libdrm.so
@@ -264,6 +264,12 @@ vendor/lib64/android.hardware.health@2.1.so
 vendor/lib64/hw/android.hardware.health@2.0-impl-2.1-samsung.so
 vendor/lib64/vendor.samsung.hardware.health@2.0.so
 
+# HIDL
+vendor/lib/libhwbinder.so
+vendor/lib/libhidltransport.so
+-vendor/lib64/libhwbinder.so
+-vendor/lib64/libhidltransport.so
+
 # Keymaster
 vendor/etc/permissions/android.hardware.hardware_keystore.xml
 vendor/etc/permissions/android.hardware.keystore.app_attest_key.xml
@@ -272,7 +278,7 @@ vendor/lib64/android.hardware.keymaster@4.0.so
 vendor/lib64/android.hardware.keymaster@4.1.so
 vendor/lib64/android.system.wifi.keystore@1.0.so
 vendor/lib64/libkeymaster4support.so
-vendor/lib64/libkeymaster4_1support.so
+-vendor/lib64/libkeymaster4_1support.so
 vendor/lib64/libkeymaster_messages.so
 vendor/lib64/libkeymaster_portable.so
 vendor/lib64/libkeystore-engine-wifi-hidl.so
@@ -314,7 +320,7 @@ vendor/lib64/vendor.samsung.hardware.radio@2.2.so
 vendor/bin/hw/android.hardware.sensors@2.0-service.multihal
 vendor/etc/init/android.hardware.sensors@2.0-service-multihal.rc
 -vendor/etc/vintf/manifest/android.hardware.sensors@2.0-multihal.xml
-vendor/etc/init/init.sensorhub.rc
+-vendor/etc/init/init.sensorhub.rc
 vendor/etc/sensors/hals.conf
 vendor/lib/android.hardware.sensors@1.0.so
 vendor/lib/android.hardware.sensors@2.0-ScopedWakelock.so
