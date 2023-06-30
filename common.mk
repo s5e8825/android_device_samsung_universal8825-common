@@ -110,7 +110,7 @@ PRODUCT_PACKAGES += \
 
 # Keymaster
 PRODUCT_PACKAGES += \
-    android.hardware.keymaster@4.0-service.samsung \
+    android.hardware.keymaster@4.0 \
     libkeymaster4_1support:64
 
 # Media
