@@ -217,7 +217,7 @@ vendor/firmware/vts.bin
 ## GPS
 vendor/bin/hw/gpsd
 vendor/bin/hw/vendor.samsung.hardware.gnss@2.1-service
-vendor/etc/init/init.gps.rc
+-vendor/etc/init/init.gps.rc
 vendor/etc/init/vendor.samsung.hardware.gnss@2.1-service.rc
 vendor/lib/libwrappergps.so
 vendor/lib64/android.hardware.gnss.measurement_corrections@1.0.so
@@ -226,7 +226,7 @@ vendor/lib64/android.hardware.gnss.visibility_control@1.0.so
 vendor/lib64/android.hardware.gnss@1.0.so
 vendor/lib64/android.hardware.gnss@1.1.so
 vendor/lib64/android.hardware.gnss@2.0.so
-vendor/lib64/android.hardware.gnss@2.1.so
+-vendor/lib64/android.hardware.gnss@2.1.so
 vendor/lib64/libwrappergps.so
 vendor/lib64/hw/android.hardware.gnss@2.1-impl.so
 vendor/lib64/hw/vendor.samsung.hardware.gnss@2.1-impl.so
@@ -265,7 +265,7 @@ vendor/lib64/hw/android.hardware.health@2.0-impl-2.1-samsung.so
 vendor/lib64/vendor.samsung.hardware.health@2.0.so
 
 # HIDL
-vendor/lib/android.hidl.allocator@1.0.so
+-vendor/lib/android.hidl.allocator@1.0.so
 vendor/lib/libhwbinder.so
 vendor/lib/libhidltransport.so
 -vendor/lib64/android.hidl.allocator@1.0.so
@@ -276,7 +276,7 @@ vendor/lib/libhidltransport.so
 vendor/etc/permissions/android.hardware.hardware_keystore.xml
 vendor/etc/permissions/android.hardware.keystore.app_attest_key.xml
 vendor/lib64/android.hardware.keymaster@3.0.so
-vendor/lib64/android.hardware.keymaster@4.0.so
+-vendor/lib64/android.hardware.keymaster@4.0.so
 vendor/lib64/android.hardware.keymaster@4.1.so
 vendor/lib64/android.system.wifi.keystore@1.0.so
 vendor/lib64/libkeymaster4support.so
@@ -303,7 +303,7 @@ vendor/lib64/android.hardware.radio.config@1.0.so
 vendor/lib64/android.hardware.radio.config@1.1.so
 vendor/lib64/android.hardware.radio.config@1.2.so
 vendor/lib64/android.hardware.radio.config@1.3.so
-vendor/lib64/android.hardware.radio.deprecated@1.0.so
+-vendor/lib64/android.hardware.radio.deprecated@1.0.so
 vendor/lib64/android.hardware.radio@1.0.so
 vendor/lib64/android.hardware.radio@1.1.so
 vendor/lib64/android.hardware.radio@1.2.so
