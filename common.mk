@@ -32,8 +32,8 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect@6.0-impl \
     android.hardware.soundtrigger@2.3-impl \
     android.hidl.allocator@1.0.vendor \
-    audio.r_submix.default.so \
-    audio.usb.default.so \
+    audio.r_submix.default \
+    audio.usb.default \
     libtinycompress
 
 PRODUCT_COPY_FILES += \
@@ -61,7 +61,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@4.0-impl \
     android.hardware.graphics.allocator@4.0-service \
-    android.hardware.graphics.composer@2.4-service.rc \
+    android.hardware.graphics.composer@2.4-service \
     android.hardware.graphics.mapper@4.0-impl \
     gralloc.default
 
@@ -94,10 +94,6 @@ PRODUCT_PACKAGES += \
 # GNSS
 PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1.vendor
-
-# GPS
-PRODUCT_PACKAGES += \
-    init.gps.rc
 
 # Health
 PRODUCT_PACKAGES += \
