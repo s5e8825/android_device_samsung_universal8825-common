@@ -1,25 +1,29 @@
-# hal_power_default.te
+r_dir_file(hal_power_default, sysfs_battery);
 
-# /dev/cpu_dma_latency
-allow hal_power_default cpu_dma_device:chr_file rw_file_perms;
+allow hal_power_default {
+    sysfs_app_launch_writable
+    sysfs_battery_writable
+    sysfs_decon
+    sysfs_gpu_writable
+    sysfs_int_writable
+    sysfs_mali_writable
+    sysfs_mif_writable
+    sysfs_power_writable
+    sysfs_ufs_writable
+}:dir r_dir_perms;
 
-# /dev/stune/top-app/schedtune.boost
-allow hal_power_default cgroup:file rw_file_perms;
+allow hal_power_default {
+    sysfs_ss_writable
+    sysfs_app_launch_writable
+    sysfs_battery_writable
+    sysfs_ems_writable
+    sysfs_gpu_writable
+    sysfs_int_writable
+    sysfs_mali_writable
+    sysfs_mif_writable
+    sysfs_power_writable
+    sysfs_ufs_writable
+}:file rw_file_perms;
 
-# /sys/class/input/
-allow hal_power_default sysfs_input:dir r_dir_perms;
-
-# /sys/class/power/
-allow hal_power_default sysfs_power:dir r_dir_perms;
-allow hal_power_default sysfs_power:file r_file_perms;
-allow hal_power_default sysfs_power_writable:file rw_file_perms;
-
-# /sys/class/sec/tsp/input/
-allow hal_power_default sysfs_sec_touchscreen:dir r_dir_perms;
-allow hal_power_default sysfs_sec_touchscreen:lnk_file r_file_perms;
-
-# /sys/class/sec/tsp/input/{cmd,enabled}
-allow hal_power_default sysfs_touchscreen_writable:file rw_file_perms;
-
-# /sys/devices/system/cpu/cpu[0-9]/cpufreq/scaling_max_freq
-allow hal_power_default sysfs_devices_system_cpu:file rw_file_perms;
+## FIXME ##
+allow hal_power_default sysfs:file write;
