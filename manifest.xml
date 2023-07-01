@@ -492,8 +492,4 @@
         <name>vendor.samsung_slsi.hardware.radio</name>
         <transport>hwbinder</transport>
     </hal>
-    <sepolicy>
-        <version>31.0</version>
-    </sepolicy>
-    <kernel target-level="6"/>
 </manifest>
