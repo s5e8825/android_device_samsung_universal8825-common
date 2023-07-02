@@ -276,11 +276,11 @@ vendor/lib/libhidltransport.so
 vendor/etc/permissions/android.hardware.hardware_keystore.xml
 vendor/etc/permissions/android.hardware.keystore.app_attest_key.xml
 vendor/lib64/android.hardware.keymaster@3.0.so
--vendor/lib64/android.hardware.keymaster@4.0.so
+vendor/lib64/android.hardware.keymaster@4.0.so
 vendor/lib64/android.hardware.keymaster@4.1.so
 vendor/lib64/android.system.wifi.keystore@1.0.so
 vendor/lib64/libkeymaster4support.so
--vendor/lib64/libkeymaster4_1support.so
+vendor/lib64/libkeymaster4_1support.so
 vendor/lib64/libkeymaster_messages.so
 vendor/lib64/libkeymaster_portable.so
 vendor/lib64/libkeystore-engine-wifi-hidl.so
