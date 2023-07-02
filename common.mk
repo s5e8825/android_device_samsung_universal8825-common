@@ -16,6 +16,9 @@
 
 COMMON_PATH := device/samsung/universal8825-common
 
+# Inherit APEXes
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay
 DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay-lineage
